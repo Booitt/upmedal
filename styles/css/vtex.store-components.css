@@ -1,0 +1,20 @@
+/* Header */
+/* Search Bar */
+.autoCompleteOuterContainer {
+    border-bottom: 1px solid white;
+}
+.searchBarIcon {
+    color: white;
+    margin-right: 0;
+}
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: none;
+}
+.searchBarContainer :global(.vtex-input__suffix) {
+    background-color: transparent;
+}
+
+/* Footer */
+.container {
+    background-color: #424242;
+}
