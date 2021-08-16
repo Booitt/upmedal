@@ -1,5 +1,43 @@
 {
   "store.home": { 
-    "blocks": []
+    "blocks": [
+      "flex-layout.row#slider"
+      
+    ]
+  },
+  "flex-layout.row#slider": {
+    "children": [
+      "slider-layout#text-test"
+    ],
+    "props": {
+      "blockClass": "slider"
+    }
+  },
+  // "flex-layout.row#spacer": {
+  //   "props": {
+  //     "grow": true
+  //   }
+  // },
+  "slider-layout#text-test": {
+    "props": {
+      "flex": 3,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image", "image"]
+  },
+
+  "image": {
+    "props": {
+      "src": "assets/camiseta_gremio.jpg",
+      "blockClass": "slider"
+    }
   }
 }

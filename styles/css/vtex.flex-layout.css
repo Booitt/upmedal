@@ -2,3 +2,10 @@
     background-color: #212121;
     box-shadow: 0 0 10px #212121;
 }
+
+.flexRow--slider {
+    background-color: transparent;
+    box-shadow: none;
+    max-width: 800px;
+    margin: 1rem auto;
+}

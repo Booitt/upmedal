@@ -23,47 +23,58 @@
 			"flex-layout.col#logo-desktop",
 			"flex-layout.col#spacer",
 			"search-bar",
-			"flex-layout.col#spacer",
+			// "flex-layout.col#spacer",
 			"minicart.v2"
 		]
 	},
 	"flex-layout.row#menu": {
-    "children": [
-      "menu"
-    ]
+		"children": ["menu"]
 	},
-  "menu": {
-    "props": {
-      "items": [
-        {
-          "id": "menu-item-shop",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "noFollow": false,
-            "tagTitle": "Shop",
-            "text": "Shop"
-          }
-        },
-        {
-          "id": "menu-item-about-us",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/about-us",
-            "noFollow": false,
-            "tagTitle": "about-us",
-            "text": "About Us"
-          }
-        }
-      ]
-    }
-  },
+	"menu": {
+		"props": {
+			"items": [
+				{
+					"id": "menu-item-promocao",
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "#",
+						"noFollow": false,
+						"tagTitle": "GRÊMIO",
+						"text": "PROMOÇÃO"
+					}
+				},
+				{
+					"id": "menu-item-gremio",
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "#",
+						"noFollow": false,
+						"tagTitle": "GRÊMIO",
+						"text": "GRÊMIO"
+					}
+				},
+				{
+					"id": "menu-item-internacional",
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "#",
+						"noFollow": false,
+						"tagTitle": "INTERNACIONAL",
+						"text": "INTERNACIONAL"
+					}
+				}
+			]
+		}
+	},
 	"flex-layout.col#spacer": {
 		"props": {
 			"width": "grow"
