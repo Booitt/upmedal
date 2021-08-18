@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/ProductItem.module.css'
 import StarIcon from '@material-ui/icons/Star'
 import StarBorderIcon from '@material-ui/icons/StarBorder'
-import img from '../assets/camiseta_gremio.jpg'
+import placeholder from "../assets/camiseta_gremio.jpg"
 
 export interface Product {
     id: string
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const ProducItem: React.FC<Props> = ({ product }) => {
-    const { id, name, imgUrl = 'assets/camiseta_gremio.jpg', stars = 0, price = 'R$ 0,00', link = '#' } = product
+    const { id, name, imgUrl, stars = 0, price = 'R$ 0,00', link = '#' } = product
     return (
         <div className={styles.container}>
             <div className={styles.stars}>{renderStars(stars)}</div>
@@ -26,7 +26,7 @@ const ProducItem: React.FC<Props> = ({ product }) => {
                 <h3>{name}</h3>
             </div>
             <div className={styles.imgContainer}>
-                <img src={imgUrl} alt="Camiseta do grêmio" />
+                <img src={imgUrl || placeholder} alt="Camiseta do grêmio" />
             </div>
             <div className={styles.info}>
                 <p>Pré-lançamento</p>

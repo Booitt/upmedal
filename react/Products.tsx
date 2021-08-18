@@ -6,7 +6,7 @@ import ListProducts from "./components/ListProducts"
 const Products: StorefrontFunctionComponent = ({}) => {
 	return (
 		<>
-			<DropDrownMenu items={items} />
+			<DropDrownMenu items={items} style={{margin: "auto"}}/>
 			<ListProducts products={products} />
 		</>
 	)

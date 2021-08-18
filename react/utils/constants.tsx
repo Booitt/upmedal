@@ -29,7 +29,7 @@ export const products = [
     {
         id: '0',
         name: 'Camiseta do Grêmio',
-        imgUrl: 'assets/camiseta_gremio.jpg',
+        imgUrl: '',
         stars: 5,
         price: 'R$ 200,34',
         link: '#',
@@ -37,7 +37,7 @@ export const products = [
     {
         id: '1',
         name: 'Camiseta do Grêmio',
-        imgUrl: 'assets/camiseta_gremio.jpg',
+        imgUrl: '',
         stars: 4,
         price: 'R$ 195,47',
         link: '#',
@@ -45,7 +45,7 @@ export const products = [
     {
         id: '2',
         name: 'Camiseta do Grêmio',
-        imgUrl: 'assets/camiseta_gremio.jpg',
+        imgUrl: '',
         stars: 3,
         price: 'R$ 99,99',
         link: '#',
@@ -53,7 +53,7 @@ export const products = [
     {
         id: '3',
         name: 'Camiseta do Grêmio',
-        imgUrl: 'assets/camiseta_gremio.jpg',
+        imgUrl: '',
         stars: 3,
         price: 'R$ 99,99',
         link: '#',
