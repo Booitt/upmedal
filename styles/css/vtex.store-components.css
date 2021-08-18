@@ -14,6 +14,7 @@
     background-color: transparent;
 }
 
-/* .imageElement--slider {
-    border-radius: 30px !important;
-} */
+/* Slider Layout */
+.imageElement {
+    border-radius: 30px;
+}

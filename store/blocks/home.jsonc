@@ -1,13 +1,13 @@
 {
   "store.home": { 
     "blocks": [
-      "flex-layout.row#slider"
-      
+      "flex-layout.row#slider",
+      "test"
     ]
   },
   "flex-layout.row#slider": {
     "children": [
-      "slider-layout#text-test"
+      "slider-layout"
     ],
     "props": {
       "blockClass": "slider"
@@ -18,7 +18,7 @@
   //     "grow": true
   //   }
   // },
-  "slider-layout#text-test": {
+  "slider-layout": {
     "props": {
       "flex": 3,
       "itemsPerPage": {
@@ -33,7 +33,6 @@
     },
     "children": ["image", "image"]
   },
-
   "image": {
     "props": {
       "src": "assets/camiseta_gremio.jpg",
