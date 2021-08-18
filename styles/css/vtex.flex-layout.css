@@ -3,9 +3,10 @@
     box-shadow: 0 0 10px #212121;
 }
 
+/* Slider Layout */
 .flexRow--slider {
     background-color: transparent;
     box-shadow: none;
     max-width: 800px;
-    margin: 1rem auto;
+    margin: 1.5rem auto 3rem auto;
 }

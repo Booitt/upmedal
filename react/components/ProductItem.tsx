@@ -4,7 +4,7 @@ import StarIcon from '@material-ui/icons/Star'
 import StarBorderIcon from '@material-ui/icons/StarBorder'
 import img from '../assets/camiseta_gremio.jpg'
 
-interface Product {
+export interface Product {
     id: string
     name: string
     imgUrl?: string

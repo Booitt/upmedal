@@ -3,7 +3,7 @@
     "test": "vtex-test-tools test"
   },
   "dependencies": {
-    "@brainhubeu/react-carousel": "^2.0.4",
+    "@material-ui/core": "^4.12.3",
     "@vtex/css-handles": "^1.0.0",
     "classnames": "^2.2.6",
     "ramda": "^0.26.1",
@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "@apollo/react-testing": "^3.1.3",
-    "@types/brainhubeu__react-carousel": "^2.0.3",
     "@types/classnames": "^2.2.7",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",

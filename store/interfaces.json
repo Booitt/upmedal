@@ -1,5 +1,5 @@
 {
-  "slider": {
-    "component": "Slider"
+  "products": {
+    "component": "Products"
   }
 }
