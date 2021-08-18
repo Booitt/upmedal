@@ -10,16 +10,10 @@
 	},
 	"flex-layout.row#footer": {
 		"children": [
-			"rich-text"
+			"tabs"
 		],
 		"props": {
 			"blockClass": "footer"
-		}
-	},
-	"rich-text": {
-		"props": {
-			"text": "footer",
-			"textPosition": "CENTER"
 		}
 	}
 }

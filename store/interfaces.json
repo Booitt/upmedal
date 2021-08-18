@@ -1,5 +1,8 @@
 {
   "products": {
     "component": "Products"
+  },
+  "tabs": {
+    "component": "Tabs"
   }
 }

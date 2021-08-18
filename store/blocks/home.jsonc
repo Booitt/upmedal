@@ -2,7 +2,8 @@
   "store.home": { 
     "blocks": [
       "flex-layout.row#slider",
-      "products"
+      "products",
+      "flex-layout.row#spacer-bottom"
     ]
   },
   "flex-layout.row#slider": {
@@ -11,6 +12,11 @@
     ],
     "props": {
       "blockClass": "slider"
+    }
+  },
+  "flex-layout.row#spacer-bottom": {
+    "props": {
+      "height": "20%"
     }
   },
   "slider-layout": {

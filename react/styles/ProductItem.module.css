@@ -5,7 +5,7 @@
     background-color: #505050;
     border-radius: 1.5rem;
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 1rem .5rem;
 }
 
 .stars {
@@ -51,9 +51,10 @@
     background-color: #14ff00;
 }
 
-.info p:last-child {
+.info p:last-child { /* Preço */
     background-color: black;
     color: #14ff00;
+    font-size: 1.3rem;
 }
 
 .actions {

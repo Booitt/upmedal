@@ -29,7 +29,7 @@ export const products = [
     {
         id: '0',
         name: 'Camiseta do Grêmio',
-        imgUrl: '',
+        imgUrl: 'https://http2.mlstatic.com/D_NQ_NP_739941-MLB46570375819_062021-V.jpg',
         stars: 5,
         price: 'R$ 200,34',
         link: '#',
@@ -37,7 +37,7 @@ export const products = [
     {
         id: '1',
         name: 'Camiseta do Grêmio',
-        imgUrl: '',
+        imgUrl: 'https://http2.mlstatic.com/D_NQ_NP_739941-MLB46570375819_062021-V.jpg',
         stars: 4,
         price: 'R$ 195,47',
         link: '#',
@@ -45,7 +45,7 @@ export const products = [
     {
         id: '2',
         name: 'Camiseta do Grêmio',
-        imgUrl: '',
+        imgUrl: 'https://http2.mlstatic.com/D_NQ_NP_739941-MLB46570375819_062021-V.jpg',
         stars: 3,
         price: 'R$ 99,99',
         link: '#',
@@ -53,7 +53,7 @@ export const products = [
     {
         id: '3',
         name: 'Camiseta do Grêmio',
-        imgUrl: '',
+        imgUrl: 'https://http2.mlstatic.com/D_NQ_NP_739941-MLB46570375819_062021-V.jpg',
         stars: 3,
         price: 'R$ 99,99',
         link: '#',
