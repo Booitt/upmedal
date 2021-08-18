@@ -1,0 +1,8 @@
+.container {
+  height: 100hv;
+  width: 100%;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
