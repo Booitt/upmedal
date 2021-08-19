@@ -10,7 +10,7 @@
 	},
 	"flex-layout.row#footer": {
 		"children": [
-			"tabs"
+			// "tabs"
 		],
 		"props": {
 			"blockClass": "footer"

@@ -8,5 +8,15 @@
     background-color: transparent;
     box-shadow: none;
     max-width: 800px;
-    margin: 1.5rem auto 3rem auto;
+    margin: 1.5rem auto 0 auto;
+}
+
+.flexRow--tabs {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.flexRowContent--mobile-main {
+    justify-content: space-between;
 }

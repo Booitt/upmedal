@@ -2,42 +2,37 @@
   "store.home": { 
     "blocks": [
       "flex-layout.row#slider",
-      "products",
-      "flex-layout.row#spacer-bottom"
+      "products"
     ]
   },
   "flex-layout.row#slider": {
     "children": [
-      "slider-layout"
+      // "slider-layout"
+      "carousel"
     ],
     "props": {
       "blockClass": "slider"
     }
-  },
-  "flex-layout.row#spacer-bottom": {
-    "props": {
-      "height": "20%"
-    }
-  },
-  "slider-layout": {
-    "props": {
-      "flex": 3,
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "fullWidth": true,
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    },
-    "children": ["image", "image"]
-  },
-  "image": {
-    "props": {
-      "src": "assets/banner_gremio.jpg",
-      "blockClass": "slider"
-    }
   }
+  // "slider-layout": {
+  //   "props": {
+  //     "flex": 3,
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "fullWidth": true,
+  //     "infinite": true,
+  //     "showNavigationArrows": "desktopOnly",
+  //     "blockClass": "carousel"
+  //   },
+  //   "children": ["image", "image"]
+  // },
+  // "image": {
+  //   "props": {
+  //     "src": "assets/banner_gremio.jpg",
+  //     "blockClass": "slider"
+  //   }
+  // }
 }

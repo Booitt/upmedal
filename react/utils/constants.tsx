@@ -1,4 +1,18 @@
-export const items = [
+// import bannerImg from '../assets/banner_gremio.jpg'
+// import camisetaImg from "../assets/camiseta_gremio.jpg"
+
+export const itemsCarousel = [
+    {
+        alt: 'img',
+        img: "https://cdn.shopify.com/s/files/1/0061/4429/5000/files/2_TOPO_1920x790pxFT.gif?v=1622568901",
+    },
+    {
+        alt: 'img',
+        img: "https://cdn.shopify.com/s/files/1/0061/4429/5000/files/2_TOPO_1920x790pxFT.gif?v=1622568901",
+    },
+]
+
+export const itemsSelection = [
     {
         id: '0',
         value: '0',

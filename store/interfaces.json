@@ -4,5 +4,8 @@
   },
   "tabs": {
     "component": "Tabs"
+  },
+  "carousel": {
+    "component": "Carousel"
   }
 }

@@ -5,11 +5,19 @@
 	"header.full": {
 		"blocks": ["header-layout.desktop", "header-layout.mobile"]
 	},
+	// DESKTOP
 	"header-layout.desktop": {
 		"children": ["sticky-layout#desktop"]
 	},
 	"sticky-layout#desktop": {
-		"children": ["flex-layout.row#main", "flex-layout.row#menu"]
+		"children": [
+			"flex-layout.row#main",
+			"flex-layout.row#menu",
+			"flex-layout.row#tabs"
+		]
+	},
+	"sticky-layout#mobile": {
+		"children": ["flex-layout.row#mobile", "flex-layout.row#tabs"]
 	},
 	"flex-layout.row#main": {
 		"props": {
@@ -23,12 +31,23 @@
 			"flex-layout.col#logo-desktop",
 			"flex-layout.col#spacer",
 			"search-bar",
-			// "flex-layout.col#spacer",
 			"minicart.v2"
 		]
 	},
+	"flex-layout.col#logo-desktop": {
+		"props": {
+			"verticalAlign": "middle"
+		},
+		"children": ["logo"]
+	},
 	"flex-layout.row#menu": {
 		"children": ["menu"]
+	},
+	"flex-layout.row#tabs": {
+		"children": ["tabs"],
+		"props": {
+			"blockClass": "tabs"
+		}
 	},
 	"menu": {
 		"props": {
@@ -75,17 +94,33 @@
 			]
 		}
 	},
-	"flex-layout.col#spacer": {
+	// MOBILE
+	"header-layout.mobile": {
+		"children": ["sticky-layout#mobile"]
+	},
+	"flex-layout.row#mobile": {
+		"children": [
+			"drawer",
+			"flex-layout.col#logo-mobile",
+			"minicart.v2"
+		],
 		"props": {
-			"width": "grow"
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"justifyContent": "space-between",
+			"blockClass": "mobile-main"
 		}
 	},
-	"flex-layout.col#logo-desktop": {
+	"drawer": {
+		"children": []
+	},
+	"flex-layout.col#logo-mobile": {
 		"props": {
 			"verticalAlign": "middle"
 		},
 		"children": ["logo"]
 	},
+	// UNIVERSAL
 	"logo": {
 		"props": {
 			"title": "Logo",
@@ -94,30 +129,9 @@
 			"width": "150"
 		}
 	},
-	"search-bar": {
-		"props": {}
-	},
-	"header-layout.mobile": {
-		"children": ["sticky-layout#mobile"]
-	},
-	"sticky-layout#mobile": {
-		"children": ["flex-layout.row#mobile"]
-	},
-	"flex-layout.row#mobile": {
-		"children": [
-			"drawer",
-			"logo",
-			"flex-layout.col#spacer",
-			"login",
-			"minicart.v2"
-		],
+	"flex-layout.col#spacer": {
 		"props": {
-			"preventHorizontalStretch": true,
-			"preserveLayoutOnMobile": true,
-			"fullWidth": true
+			"width": "grow"
 		}
-	},
-	"drawer": {
-		"children": []
 	}
 }

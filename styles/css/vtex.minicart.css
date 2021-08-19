@@ -1,0 +1,12 @@
+.openIconContainer :global(.vtex-button) {
+    transition: background-color .3s linear;
+}
+
+.openIconContainer :global(.vtex-button):hover {
+    background-color: #4b4b4ba2;
+    border-radius: 50%;
+}
+
+.minicartIconContainer {
+    color: white;
+}
