@@ -18,3 +18,16 @@
 .imageElement {
     border-radius: 30px;
 }
+
+/* Product price */
+.listPrice {
+    color: rgb(219, 83, 83);
+}
+
+.sellingPrice {
+    color: #59fd00;
+}
+
+.installmentsPrice {
+    color: rgb(128, 128, 128);
+}

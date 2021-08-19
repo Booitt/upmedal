@@ -26,6 +26,7 @@
     "children": [
       "product-summary-add-to-list-button",
       "product-summary-name",
+      "product-summary-image",
       "product-rating-inline",
       "product-summary-space",
       "product-summary-price",
