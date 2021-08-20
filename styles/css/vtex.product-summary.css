@@ -1,3 +1,7 @@
 .imageNormal {
     border-radius: .5em;
 }
+
+.priceContainer {
+    padding-bottom: .7rem;
+}

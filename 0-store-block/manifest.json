@@ -1,0 +1,17 @@
+{
+  "vendor": "hiringcoders2021",
+  "name": "upmedalbooittblock",
+  "version": "0.0.1",
+  "title": "Custom",
+  "description": "Custom components",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

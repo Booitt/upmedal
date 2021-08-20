@@ -6,8 +6,7 @@
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x",
-    "assets": "0.x",
-    "react": "3.x"
+    "assets": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
@@ -20,7 +19,6 @@
     "vtex.store-components": "3.x",
     "vtex.styleguide": "9.x",
     "vtex.slider": "0.x",
-    "vtex.carousel": "2.x",
     "vtex.shelf": "1.x",
     "vtex.menu": "2.x",
     "vtex.minicart": "2.x",
@@ -52,7 +50,8 @@
     "vtex.checkout-summary": "0.x",
     "vtex.store-icons": "0.x",
     "vtex.list-context": "0.x",
-    "hiringcoders2021.upmedalbooitt": "0.x"
+    "vtex.condition-layout": "2.x",
+    "hiringcoders2021.upmedalbooittblock": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

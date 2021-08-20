@@ -1,0 +1,17 @@
+.productPriceCurrency {
+    color: #DB5353;
+}
+
+.productPrice {
+    color: #59fd00;
+}
+
+.productImageContainer {
+    margin-left: .5rem;
+}
+
+.deleteIcon {
+    color: #DB5353;
+    margin-right: .5rem;
+    margin-top: -3rem;
+}

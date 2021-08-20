@@ -1,13 +1,14 @@
 import React from "react"
 import { Paper, Tabs as MuiTabs, Tab } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core"
-import PersonIcon from "@material-ui/icons/Person"
+// import PersonIcon from "@material-ui/icons/Person"
 import HomeIcon from "@material-ui/icons/Home"
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart"
+// import ShoppingCartIcon from "@material-ui/icons/ShoppingCart"
 import WhatsAppIcon from "@material-ui/icons/WhatsApp"
 
 const paperStyles = makeStyles({
 	root: {
+		fontSize: "",
 		backgroundColor: "transparent",
 		boxShadow: "none",
 		color: "white",
@@ -35,19 +36,19 @@ const tabStyles = makeStyles({
 const Tabs: React.FC = () => {
 	const paperClasses = paperStyles()
 	const tabClasses = tabStyles()
-	const [value, setValue] = React.useState(0)
+	// const [value, setValue] = React.useState(0)
 
-	const handleChange = (event: React.ChangeEvent<any>, newValue: number) => {
-		setValue(newValue)
-		event && "" // Todo: go to route?
-	}
+	// const handleChange = (event: React.ChangeEvent<any>, newValue: number) => {
+	// 	setValue(newValue)
+	// 	event && ""
+	// }
 
 	return (
 		<div>
 			<Paper square className={paperClasses.root}>
 				<MuiTabs
-					value={value}
-					onChange={handleChange}
+					value={0}
+					// onChange={handleChange}
 					variant="fullWidth"
 					indicatorColor="secondary"
 					TabIndicatorProps={{ className: tabClasses.indicator }}
@@ -59,8 +60,9 @@ const Tabs: React.FC = () => {
 						classes={{ selected: tabClasses.selected, root: tabClasses.root }}
 						icon={<HomeIcon />}
 						label="INÍCIO"
+						href="/"
 					/>
-					<Tab
+					{/* <Tab
 						disableTouchRipple={true}
 						classes={{ selected: tabClasses.selected, root: tabClasses.root }}
 						icon={<PersonIcon />}
@@ -71,12 +73,14 @@ const Tabs: React.FC = () => {
 						classes={{ selected: tabClasses.selected, root: tabClasses.root }}
 						icon={<ShoppingCartIcon />}
 						label="LOJA"
-					/>
+					/> */}
 					<Tab
 						disableTouchRipple={true}
 						classes={{ selected: tabClasses.selected, root: tabClasses.root }}
 						icon={<WhatsAppIcon />}
 						label="WHATSAPP"
+						href="https://api.whatsapp.com/send?phone=5555999262435&text=Ol%C3%A1!"
+						target="__blank"
 					/>
 				</MuiTabs>
 			</Paper>

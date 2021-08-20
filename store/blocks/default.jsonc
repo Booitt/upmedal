@@ -21,8 +21,10 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
   "product-summary.shelf": {
+    "props": {
+      "specificationFilters": [{"seller": "upmedal"}]
+    },
     "children": [
       "product-summary-add-to-list-button",
       "product-summary-name",

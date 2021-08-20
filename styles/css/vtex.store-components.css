@@ -21,13 +21,14 @@
 
 /* Product price */
 .listPrice {
-    color: rgb(219, 83, 83);
+    color: #DB5353;
 }
-
 .sellingPrice {
     color: #59fd00;
 }
-
 .installmentsPrice {
     color: rgb(128, 128, 128);
+}
+.discountInsideContainer {
+    border-radius: .5rem;
 }
