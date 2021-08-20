@@ -1,6 +1,10 @@
 // import bannerImg from '../assets/banner_gremio.jpg'
 // import camisetaImg from "../assets/camiseta_gremio.jpg"
 
+// GET /cadastros GET /cadastros/{id} PUT /cadastros DELETE /cadastros
+export const AWS_API =
+	"https://wmq5x946lg.execute-api.us-east-2.amazonaws.com/cadastros"
+
 export const itemsCarousel = [
     {
         alt: 'img',
@@ -15,24 +19,24 @@ export const itemsCarousel = [
 export const itemsSelection = [
     {
         id: '0',
-        value: '0',
-        label: 'Zero',
+        value: 'futebol',
+        label: 'Futebol',
         action(): void {
             console.log(this.value)
         },
     },
     {
         id: '1',
-        value: '1',
-        label: 'Um',
+        value: 'lol',
+        label: 'LoL e-sports',
         action(): void {
             console.log(this.value)
         },
     },
     {
         id: '2',
-        value: '2',
-        label: 'Dois',
+        value: 'bike',
+        label: 'Bike',
         action(): void {
             console.log(this.value)
         },

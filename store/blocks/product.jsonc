@@ -3,35 +3,37 @@
     "children": [
       // "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
+      // "flex-layout.row#description",
+      // "flex-layout.row#specifications-title",
       "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      // "product-reviews",
+      "product-questions-and-answers",
+      "leads"
     ]
   },
-  "flex-layout.row#specifications-title": {
-    "children": ["rich-text#specifications"]
-  },
-  "rich-text#specifications": {
-    "props": {
-      "text": "##### Product Specifications"
-    }
-  },
+  // "flex-layout.row#specifications-title": {
+  //   "children": ["rich-text#specifications"]
+  // },
+  // "rich-text#specifications": {
+  //   "props": {
+  //     "text": "##### Product Specifications"
+  //   }
+  // },
   // "flex-layout.row#product-breadcrumb": {
   //   "props": {
   //     "marginTop": 4
   //   },
   //   "children": ["breadcrumb"]
   // },
-  "flex-layout.row#description": {
-    "props": {
-      "marginBottom": 7
-    },
-    "children": ["product-description"]
-  },
+  // "flex-layout.row#description": {
+  //   "props": {
+  //     "marginBottom": 7
+  //   },
+  //   "children": ["product-description"]
+  // },
   "condition-layout.product#availability": {
     "props": {
+      "blockClass": "product-main",
       "conditions": [
         {
           "subject": "isProductAvailable"
@@ -54,9 +56,9 @@
   },
 
   "stack-layout": {
-    "props": {
-      "blockClass": "product"
-    },
+    // "props": {
+    //   "blockClass": "product"
+    // },
     "children": [
       "flex-layout.row#product-image",
       "product-specification-badges"
@@ -147,8 +149,8 @@
   "flex-layout.col#right-col-availability": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0,
-      "blockClass": "info-availability"
+      "rowGap": 0
+      // "blockClass": "info-availability"
     },
     "children": [
       "flex-layout.row#product-name",
@@ -158,9 +160,9 @@
     ]
   },
   "flex-layout.row#availability": {
-    "props": {
-      "blockClass": "message-availability"
-    },
+    // "props": {
+    //   "blockClass": "message-availability"
+    // },
     "children": ["availability-subscriber"]
   }
 

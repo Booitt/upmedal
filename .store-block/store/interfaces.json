@@ -4,5 +4,11 @@
   },
   "carousel": {
     "component": "Carousel"
+  },
+  "dropdown": {
+    "component": "DropDown"
+  },
+  "leads": {
+    "component": "Leads"
   }
 }

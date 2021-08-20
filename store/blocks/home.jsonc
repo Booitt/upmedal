@@ -1,6 +1,6 @@
 {
 	"store.home": {
-		"blocks": ["flex-layout.row#slider", "list-context.product-list"]
+		"blocks": ["flex-layout.row#slider", "dropdown", "list-context.product-list"]
 	},
 	"flex-layout.row#slider": {
 		"children": ["carousel"],
@@ -8,11 +8,12 @@
 			"blockClass": "slider"
 		}
 	},
+	
 	"list-context.product-list": {
 		"blocks": ["product-summary.shelf"],
 		"children": ["list-context-renderer#wrapped"],
 		"props": {
-			"orderBy": "OrderByTopSaleDESC",
+			// "orderBy": "OrderByTopSaleDESC",
 			"maxItems": 8
 		}
 	},

@@ -10,11 +10,12 @@ interface DropDownMenuItem {
 
 interface DropDrownMenuProps {
     items: DropDownMenuItem[]
+    className?: string
     width?: string
     style?: { [key: string]: string }
 }
 
-const DropDrownMenu: React.FC<DropDrownMenuProps> = ({ items, width = '50%', style }) => {
+const DropDrownMenu: React.FC<DropDrownMenuProps> = ({ items, className, width = '50%', style }) => {
     const formClasses = formStyles()
     const inputClasses = inputStyles()
     const menuListClasses = menuListStyles()
@@ -28,7 +29,7 @@ const DropDrownMenu: React.FC<DropDrownMenuProps> = ({ items, width = '50%', sty
     }
 
     return (
-        <div style={{ display: 'flex', width, ...style }}>
+        <div className={className} style={{ display: 'flex', width, ...style }}>
             <FormControl variant="filled" className={formClasses.formControl} style={{ width }}>
                 <Select
                     MenuProps={{ classes: menuListClasses }}

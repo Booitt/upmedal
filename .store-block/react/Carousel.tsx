@@ -11,10 +11,6 @@ const carouselStyles = makeStyles({
 	},
 })
 
-// interface CarouselProps {
-// 	items: { img: string; alt: string }[]
-// }
-
 const Carousel: React.FC = () => {
 	const carouselClasses = carouselStyles()
 	return (

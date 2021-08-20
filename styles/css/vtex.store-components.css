@@ -32,3 +32,8 @@
 .discountInsideContainer {
     border-radius: .5rem;
 }
+
+/* Minicart */
+.productBrand {
+    color: white;
+}
