@@ -12,15 +12,12 @@
 	"sticky-layout#desktop": {
 		"children": [
 			"flex-layout.row#main",
-			"flex-layout.row#menu",
 			"flex-layout.row#tabs"
 		]
 	},
-	"sticky-layout#mobile": {
-		"children": ["flex-layout.row#mobile", "flex-layout.row#tabs"]
-	},
 	"flex-layout.row#main": {
 		"props": {
+			"justifyContent": "center",
 			"horizontalAlign": "center",
 			"verticalAlign": "center",
 			"preventHorizontalStretch": true,
@@ -29,8 +26,9 @@
 		},
 		"children": [
 			"flex-layout.col#logo-desktop",
-			"flex-layout.col#spacer",
+			"flex-layout.row#spacer",
 			"search-bar",
+			"flex-layout.row#spacer",
 			"minicart.v2"
 		]
 	},
@@ -40,61 +38,10 @@
 		},
 		"children": ["logo"]
 	},
-	"flex-layout.row#menu": {
-		"children": ["menu"]
-	},
-	"flex-layout.row#tabs": {
-		"children": ["tabs"],
-		"props": {
-			"blockClass": "tabs"
-		}
-	},
-	"menu": {
-		"props": {
-			"items": [
-				{
-					"id": "menu-item-promocao",
-					"type": "custom",
-					"iconId": null,
-					"highlight": false,
-					"itemProps": {
-						"type": "internal",
-						"href": "#",
-						"noFollow": false,
-						"tagTitle": "PROMOÇÃO",
-						"text": "PROMOÇÃO"
-					}
-				},
-				{
-					"id": "menu-item-gremio",
-					"type": "custom",
-					"iconId": null,
-					"highlight": false,
-					"itemProps": {
-						"type": "internal",
-						"href": "#",
-						"noFollow": false,
-						"tagTitle": "GRÊMIO",
-						"text": "GRÊMIO"
-					}
-				},
-				{
-					"id": "menu-item-internacional",
-					"type": "custom",
-					"iconId": null,
-					"highlight": false,
-					"itemProps": {
-						"type": "internal",
-						"href": "#",
-						"noFollow": false,
-						"tagTitle": "INTERNACIONAL",
-						"text": "INTERNACIONAL"
-					}
-				}
-			]
-		}
-	},
 	// MOBILE
+	"sticky-layout#mobile": {
+		"children": ["flex-layout.row#mobile", "flex-layout.row#tabs"]
+	},
 	"header-layout.mobile": {
 		"children": ["sticky-layout#mobile"]
 	},
@@ -116,7 +63,7 @@
 			"width": "150"
 		}
 	},
-	"flex-layout.col#spacer": {
+	"flex-layout.row#spacer": {
 		"props": {
 			"width": "grow"
 		}

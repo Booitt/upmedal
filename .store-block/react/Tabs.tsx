@@ -43,7 +43,7 @@ const Tabs: React.FC = () => {
 						disableTouchRipple={true}
 						classes={{ selected: tabClasses.selected, root: tabClasses.root }}
 						icon={<WhatsAppIcon />}
-						label="WHATSAPP"
+						label="SUPORTE"
 						href="https://api.whatsapp.com/send?phone=5555999262435&text=Ol%C3%A1!"
 						target="__blank"
 					/>

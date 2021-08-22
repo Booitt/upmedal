@@ -1,26 +1,13 @@
 {
 	"store.home": {
-		"blocks": ["flex-layout.row#slider", "dropdown", "list-context.product-list"]
+		"blocks": ["tab-layout#header"]
 	},
-	"flex-layout.row#slider": {
-		"children": ["carousel"],
+	// rest in tabs folder
+	"tab-layout#header": {
+		"children": ["tab-list#header", "tab-content#home"],
 		"props": {
-			"blockClass": "slider"
-		}
-	},
-	
-	"list-context.product-list": {
-		"blocks": ["product-summary.shelf"],
-		"children": ["list-context-renderer#wrapped"],
-		"props": {
-			// "orderBy": "OrderByTopSaleDESC",
-			"maxItems": 8
-		}
-	},
-	"list-context-renderer#wrapped": {
-		"props": {
-			"listElement": "ul",
-			"itemElement": "li"
+			"blockClass": "tab",
+			"defaultActiveTabId": "tab0"
 		}
 	}
 }

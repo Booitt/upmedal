@@ -3,18 +3,8 @@ import axios from "axios"
 import { v4 as uuid } from "uuid"
 import { CircularProgress } from "@material-ui/core"
 import styles from "./styles/Leads.module.css"
-// import { AWS_API } from "./utils/constants"
-import { phoneMask } from "./utils/utils"
+import { getURL, phoneMask } from "./utils/utils"
 import { useCssHandles } from "vtex.css-handles"
-
-interface AWS_URL {
-	id: string
-	name: string
-	email: string
-	phone: string
-}
-const getURL = ({ id, name, email, phone }: AWS_URL) =>
-	`https://phcby7qqw9.execute-api.us-east-2.amazonaws.com/dev/upmedal-api?id=${id}&name=${name}&email=${email}&phone=${phone}`
 
 const CSS_HANDLES = ["leads"] as const
 
@@ -99,7 +89,7 @@ const Leads: StorefrontFunctionComponent = () => {
 						</div>
 						<div className={styles.errorMsg}>{errorMsg}</div>
 						<small className={styles.disclaimer}>
-							Não cadastre informações pessoais, pois a API expoe os dados.
+							Não cadastre informações pessoais, pois a API expõe os dados.
 						</small>
 						<button>Cadastrar</button>
 					</>

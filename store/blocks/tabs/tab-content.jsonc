@@ -1,0 +1,57 @@
+{
+	"tab-content#home": {
+		"children": [
+			"tab-content.item#tab0",
+			"tab-content.item#tab1",
+			"tab-content.item#tab2"
+		]
+	},
+	"tab-content.item#tab0": {
+		"children": ["carousel", "dropdown", "list-context.product-list#0"],
+		"props": {
+			"tabId": "tab0"
+		}
+	},
+	"tab-content.item#tab1": {
+		"children": ["carousel", "dropdown", "list-context.product-list#1"],
+		"props": {
+			"tabId": "tab1"
+		}
+	},
+	"tab-content.item#tab2": {
+		"children": ["carousel", "dropdown", "list-context.product-list#2"],
+		"props": {
+			"tabId": "tab2"
+		}
+	},
+	"list-context.product-list#0": {
+		"blocks": ["product-summary.shelf"],
+		"children": ["list-context-renderer#wrapped"],
+		"props": {
+			"category": "20",
+			"maxItems": 8
+		}
+	},
+	"list-context.product-list#1": {
+		"blocks": ["product-summary.shelf"],
+		"children": ["list-context-renderer#wrapped"],
+		"props": {
+			"category": "20/24",
+			"maxItems": 8
+		}
+	},
+	"list-context.product-list#2": {
+		"blocks": ["product-summary.shelf"],
+		"children": ["list-context-renderer#wrapped"],
+		"props": {
+			"category": "20/22",
+			"maxItems": 8
+		}
+	},
+	"list-context-renderer#wrapped": {
+		"props": {
+			"listElement": "ul",
+			"itemElement": "li"
+		}
+	}
+}

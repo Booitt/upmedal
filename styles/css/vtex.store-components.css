@@ -1,5 +1,7 @@
-/* Header */
 /* Search Bar */
+.searchBarInnerContainer {
+    width: 500px;
+}
 .autoCompleteOuterContainer {
     border-bottom: 1px solid white;
 }
@@ -12,11 +14,6 @@
 }
 .searchBarContainer :global(.vtex-input__suffix) {
     background-color: transparent;
-}
-
-/* Slider Layout */
-.imageElement {
-    border-radius: 30px;
 }
 
 /* Product price */
@@ -36,4 +33,9 @@
 /* Minicart */
 .productBrand {
     color: white;
+}
+
+/* Product carousel */
+.carouselContainer {
+    background-color: #303030;
 }

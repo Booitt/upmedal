@@ -15,24 +15,24 @@ export const itemsCarousel = [
 export const itemsSelection = [
     {
         id: '0',
-        value: 'futebol',
-        label: 'Futebol',
+        value: 'todos',
+        label: 'Todos os produtos',
         action(): void {
             console.log(this.value)
         },
     },
     {
         id: '1',
-        value: 'lol',
-        label: 'LoL e-sports',
+        value: 'promocao',
+        label: 'Promoção',
         action(): void {
             console.log(this.value)
         },
     },
     {
         id: '2',
-        value: 'bike',
-        label: 'Bike',
+        value: 'corinthians',
+        label: 'Corinthians',
         action(): void {
             console.log(this.value)
         },

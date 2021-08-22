@@ -1,0 +1,26 @@
+.container {
+	margin: 5rem 0;
+}
+
+.listContainer {
+	background-color: #212121;
+	justify-content: start;
+	padding-left: 1rem;
+	position: fixed;
+	width: 100%;
+	top: 64px;
+	z-index: 1;
+}
+
+.listContainer :global(.vtex-content) {
+	background-color: none;
+}
+
+.listContainer :global(.vtex-button) {
+	color: white;
+	background-color: transparent;
+}
+
+.listItemActive :global(.vtex-button) {
+	color: #59fd00;
+}

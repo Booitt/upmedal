@@ -74,7 +74,7 @@
 }
 
 .status {
-    color: #14ff00;
+    /* color: #14ff00; */
     height: 100%;
     width: 100%;
     display: flex;
