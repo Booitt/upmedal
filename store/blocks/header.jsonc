@@ -28,7 +28,6 @@
 			"flex-layout.col#logo-desktop",
 			"flex-layout.row#spacer",
 			"search-bar",
-			"flex-layout.row#spacer",
 			"minicart.v2"
 		]
 	},

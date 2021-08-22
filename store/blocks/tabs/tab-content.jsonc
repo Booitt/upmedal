@@ -28,7 +28,7 @@
 		"blocks": ["product-summary.shelf"],
 		"children": ["list-context-renderer#wrapped"],
 		"props": {
-			"category": "20",
+			"category": "28",
 			"maxItems": 8
 		}
 	},

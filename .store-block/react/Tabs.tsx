@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useCssHandles } from "vtex.css-handles"
 
 import { Paper, Tabs as MuiTabs, Tab } from "@material-ui/core"
@@ -13,6 +13,11 @@ const Tabs: React.FC = () => {
 	const paperClasses = paperStyles()
 	const tabClasses = tabStyles()
 
+	const [display, setDisplay] = useState('none')
+
+	useEffect(() => {
+		setDisplay('initial')
+	}, [])
 	// const [value, setValue] = React.useState(0)
 
 	// const handleChange = (event: React.ChangeEvent<any>, newValue: number) => {
@@ -21,7 +26,7 @@ const Tabs: React.FC = () => {
 	// }
 
 	return (
-		<div className={handles.tabs}>
+		<div className={handles.tabs} style={{display}}>
 			<Paper square className={paperClasses.root}>
 				<MuiTabs
 					value={0}

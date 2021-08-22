@@ -1,29 +1,45 @@
 {
-    "tab-list#header": {
-        "children": ["tab-list.item#tab0", "tab-list.item#tab1", "tab-list.item#tab2"]
-    },
-    "tab-list.item#tab0": {
-        "props": {
-            "tabId": "tab0",
-            "label": "TODOS OS PRODUTOS"
-        }
-    },
-    "tab-list.item#tab1": {
-        "props": {
-            "tabId": "tab1",
-            "label": "PROMOÇÃO"
-        }
-    },
-    "tab-list.item#tab2": {
-        "props": {
-            "tabId": "tab2",
-            "label": "CORINTHIANS"
-        }
-    },
-    "flex-layout.row#tabs": {
-        "children": ["tabs"],
-        "props": {
-            "blockClass": "tabs"
-        }
-    }
+	"tab-list#header": {
+		"children": ["slider-layout#tabs"]
+	},
+	"slider-layout#tabs": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 3,
+				"phone": 2
+			},
+			"showPaginationDots": "never",
+			"showNavigationArrows": "never"
+		},
+		"children": [
+			"tab-list.item#tab0",
+			"tab-list.item#tab1",
+			"tab-list.item#tab2"
+		]
+	},
+	"tab-list.item#tab0": {
+		"props": {
+			"tabId": "tab0",
+			"label": "TODOS OS PRODUTOS"
+		}
+	},
+	"tab-list.item#tab1": {
+		"props": {
+			"tabId": "tab1",
+			"label": "PROMOÇÃO"
+		}
+	},
+	"tab-list.item#tab2": {
+		"props": {
+			"tabId": "tab2",
+			"label": "CORINTHIANS"
+		}
+	},
+	"flex-layout.row#tabs": {
+		"children": ["tabs"],
+		"props": {
+			"blockClass": "tabs"
+		}
+	}
 }

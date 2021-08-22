@@ -1,5 +1,6 @@
 import React from "react"
 import { FormControl, makeStyles, MenuItem, Select } from "@material-ui/core"
+import styles from "../styles/Dropdown.module.css"
 
 interface DropDownMenuItem {
 	id: string
@@ -11,14 +12,12 @@ interface DropDownMenuItem {
 interface DropDrownMenuProps {
 	items: DropDownMenuItem[]
 	className?: string
-	width?: string
 	style?: { [key: string]: string }
 }
 
 const DropDrownMenu: React.FC<DropDrownMenuProps> = ({
 	items,
 	className,
-	width = "50%",
 	style,
 }) => {
 	const formClasses = formStyles()
@@ -36,11 +35,11 @@ const DropDrownMenu: React.FC<DropDrownMenuProps> = ({
 	}
 
 	return (
-		<div className={className} style={{ display: "flex", width, ...style }}>
+		<div className={`${className} ${styles.container}`} style={{ display: "flex", ...style }}>
 			<FormControl
 				variant="filled"
 				className={formClasses.formControl}
-				style={{ width }}
+				// style={{ width }}
 			>
 				<Select
 					MenuProps={{ classes: menuListClasses }}
