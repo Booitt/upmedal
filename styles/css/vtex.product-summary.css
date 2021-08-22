@@ -5,3 +5,15 @@
 .priceContainer {
     padding-bottom: .7rem;
 }
+
+.productBrand {
+    color: white;
+}
+.element {
+    text-align: center;
+}
+
+.nameContainer {
+    text-align: center;
+    align-self: center;
+}

@@ -1,9 +1,5 @@
 // import bannerImg from '../assets/banner_gremio.jpg'
-// import camisetaImg from "../assets/camiseta_gremio.jpg"
-
-// GET /cadastros GET /cadastros/{id} PUT /cadastros DELETE /cadastros
-export const AWS_API =
-	"https://wmq5x946lg.execute-api.us-east-2.amazonaws.com/cadastros"
+// import camisetaImg from "../assets/camiseta_gremio.jpg"	
 
 export const itemsCarousel = [
     {

@@ -3,9 +3,18 @@ import axios from "axios"
 import { v4 as uuid } from "uuid"
 import { CircularProgress } from "@material-ui/core"
 import styles from "./styles/Leads.module.css"
-import { AWS_API } from "./utils/constants"
+// import { AWS_API } from "./utils/constants"
 import { phoneMask } from "./utils/utils"
 import { useCssHandles } from "vtex.css-handles"
+
+interface AWS_URL {
+	id: string
+	name: string
+	email: string
+	phone: string
+}
+const getURL = ({ id, name, email, phone }: AWS_URL) =>
+	`https://phcby7qqw9.execute-api.us-east-2.amazonaws.com/dev/upmedal-api?id=${id}&name=${name}&email=${email}&phone=${phone}`
 
 const CSS_HANDLES = ["leads"] as const
 
@@ -19,7 +28,8 @@ const Leads: StorefrontFunctionComponent = () => {
 	const [errorMsg, setErrorMsg] = useState("")
 	const [status, setStatus] = useState("")
 
-	const handleInput = (e: React.ChangeEvent<any>) => { // <HTMLInputElement> not accepted
+	const handleInput = (e: React.ChangeEvent<any>) => {
+		// <HTMLInputElement> not accepted
 		if (errorMsg) setErrorMsg("")
 		const { id, value } = e.target
 		setInputs((prevState) => {
@@ -37,9 +47,14 @@ const Leads: StorefrontFunctionComponent = () => {
 		if (error) return setErrorMsg(error)
 
 		setStatus("enviando")
-		axios.put(AWS_API, { id: uuid(), ...inputs }).then(() => {
-			setStatus("enviado")
-		})
+		axios
+			.get(getURL({ ...inputs, id: uuid() }))
+			.then(() => {
+				setStatus("enviado")
+			})
+			.catch((err) => {
+				console.log(err)
+			})
 	}
 
 	return (
@@ -59,9 +74,7 @@ const Leads: StorefrontFunctionComponent = () => {
 								id="name"
 								value={inputs.name}
 								onChange={handleInput}
-								className={
-									errorMsg && !inputs.name ? styles.inputError : ""
-								}
+								className={errorMsg && !inputs.name ? styles.inputError : ""}
 							/>
 						</div>
 						<div className={styles.inputContainer}>
@@ -71,9 +84,7 @@ const Leads: StorefrontFunctionComponent = () => {
 								id="email"
 								value={inputs.email}
 								onChange={handleInput}
-								className={
-									errorMsg && !inputs.email ? styles.inputError : ""
-								}
+								className={errorMsg && !inputs.email ? styles.inputError : ""}
 							/>
 						</div>
 						<div className={styles.inputContainer}>
@@ -83,12 +94,13 @@ const Leads: StorefrontFunctionComponent = () => {
 								id="phone"
 								value={inputs.phone}
 								onChange={handleInput}
-								className={
-									errorMsg && !inputs.phone ? styles.inputError : ""
-								}
+								className={errorMsg && !inputs.phone ? styles.inputError : ""}
 							/>
 						</div>
 						<div className={styles.errorMsg}>{errorMsg}</div>
+						<small className={styles.disclaimer}>
+							Não cadastre informações pessoais, pois a API expoe os dados.
+						</small>
 						<button>Cadastrar</button>
 					</>
 				) : (
@@ -96,10 +108,20 @@ const Leads: StorefrontFunctionComponent = () => {
 						{status === "enviando" ? (
 							<CircularProgress color="inherit" />
 						) : (
-							<h3>
-								Obrigado! Assim que houver uma oferta para este produto,
-								avisaremos você. =)
-							</h3>
+							<>
+								<h3>
+									Obrigado! Assim que houver uma oferta para este produto,
+									avisaremos você. =)
+								</h3>
+								<p>
+									<a
+										href="https://phcby7qqw9.execute-api.us-east-2.amazonaws.com/dev/upmedal-api"
+										target="__blank"
+									>
+										Você pode ver a lista de cadastros aqui
+									</a>
+								</p>
+							</>
 						)}
 					</div>
 				)}
